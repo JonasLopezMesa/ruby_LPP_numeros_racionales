@@ -7,11 +7,9 @@ class Fraccion
 	def initialize(numerador, denominador)
 		@num = numerador
 		@denom = denominador
-		true
 	end
 	def to_s
-
-		
+		puts "#{@num}/#{@denom}"
 	end
 	def suma
 		

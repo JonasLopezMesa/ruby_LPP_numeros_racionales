@@ -11,4 +11,8 @@ class Test_Fraccion < Test::Unit::TestCase
 		assert Fraccion.new(7,200)
 		assert Fraccion.new(40,3)
 	end
+	def test_to_s
+		test1 = Fraccion.new(4,8)
+		assert_equal nil, test1.to_s
+	end
 end
