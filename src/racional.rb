@@ -1,6 +1,6 @@
 # Implementar en este fichero la clase para crear objetos racionales
 
-require "./gcd.rb"
+require "../src/gcd.rb"
 
 class Fraccion
 	#hace accesibles a los atriburos num y denom.
@@ -24,10 +24,12 @@ class Fraccion
 		@num = (a.num * b.denom) - (a.denom * b.num)
 		@denom = a.denom * b.denom
 	end
-	def producto
-		
+	def producto(a, b)
+		@num = a.num * b.num
+		@denom = a.denom * b.denom
 	end
-	def division
-		
+	def division(a, b)
+		@num = a.num * b.denom
+		@denom = a.denom * b.num
 	end
 end
