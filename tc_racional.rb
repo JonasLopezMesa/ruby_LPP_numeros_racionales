@@ -22,4 +22,11 @@ class Test_Fraccion < Test::Unit::TestCase
 		assert c.suma(a, b)
 		assert_equal 12, c.suma(a, b)
 	end
+	def test_resta
+		a = Fraccion.new(2,3)
+		b = Fraccion.new(1,2)
+		c = Fraccion.new(0,0)
+		assert c.resta(a, b)
+		assert_equal 6, c.resta(a, b)
+	end
 end

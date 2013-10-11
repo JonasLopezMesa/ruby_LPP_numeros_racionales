@@ -20,8 +20,9 @@ class Fraccion
 		@num = (a.num * b.denom) + (a.denom * b.num)
 		@denom = a.denom * b.denom
 	end
-	def resta
-		
+	def resta(a, b)
+		@num = (a.num * b.denom) - (a.denom * b.num)
+		@denom = a.denom * b.denom
 	end
 	def producto
 		
@@ -30,13 +31,3 @@ class Fraccion
 		
 	end
 end
-
-a = Fraccion.new(1,4)
-puts "-"
-b = Fraccion.new(1,3)
-puts "--"
-c = Fraccion.new(0,0)
-puts "---"
-c.suma(a,b)
-puts "-----"
-c.to_s
