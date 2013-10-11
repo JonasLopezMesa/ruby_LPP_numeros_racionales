@@ -15,4 +15,11 @@ class Test_Fraccion < Test::Unit::TestCase
 		test1 = Fraccion.new(4,8)
 		assert_equal nil, test1.to_s
 	end
+	def test_suma
+		a = Fraccion.new(1,4)
+		b = Fraccion.new(1,3)
+		c = Fraccion.new(0,0)
+		assert c.suma(a, b)
+		assert_equal 12, c.suma(a, b)
+	end
 end
